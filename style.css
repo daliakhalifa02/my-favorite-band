@@ -1,0 +1,206 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+*{
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav a.icon {
+  float: right;
+}
+
+.topnav a:hover {
+  background-color: #B68E26;
+}
+
+.logo{
+  height: 100px;
+  width: 100px;
+  filter: brightness(0) invert(1);
+}
+
+#myLinks, #icon{
+  padding-top: 25px;
+}
+
+/* Banner Section */
+.banner-container{
+  background-image: url("images/banner.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+
+.banner{
+  text-align: center;
+  color: white;
+  padding: 300px 0;
+}
+
+.banner-h1, .banner-h2{
+  /* background-color: black; */
+  width: fit-content;
+  margin:auto;
+  vertical-align:middle;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  padding: 0;
+}
+
+.banner-h1{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.banner-h2{
+  margin: 30px auto;
+  font-style: italic;
+  font-size: 30px;
+}
+
+button{
+  background-color: #B68E26;
+  border: none;
+  padding: 10px 30px;
+  font-size: large;
+  text-transform: uppercase;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* About Section */
+.about-section{
+  background-color: #1d1d1d;
+  margin: 0px;
+}
+
+img{
+  width: 90%;
+  margin-left: 5%;
+}
+
+h1,h3{
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-family:'Playfair Display', serif;
+  font-size: 45px;
+  margin: 0;
+}
+
+h1{
+  color: #B68E26;
+}
+
+p{
+  color: white;
+  margin: 10%;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  line-height: 2;
+  font-size: 23px;
+}
+
+/* h1 {
+  animation-duration: 2s;
+  animation-name: slidein1;
+}
+
+h2{
+  /* animation-duration: 2s;
+  animation-name: slidein1; 
+  transition: 1s;
+  left: 0;
+} */
+/* 
+@keyframes slidein2{
+  from {
+    margin-right: 100%;
+    width:fit-content;
+  } */
+/* 
+  to {
+    margin-right: 26%;
+    /* width: 100%; */
+  /* }
+} */
+
+/* @keyframes slidein1 {
+  from {
+    margin-left: 100%;
+    /* width: 300%; */
+  /* }
+
+  to {
+    margin-left: 38%;
+    width: 100%; 
+  }
+}*/
+
+/* Albums Section */
+.mySlides{
+  display:none;
+}
+
+.albums{
+  background-image: url("images/black-baground.png");
+  height: 100%;
+  width: 100%;
+}
+
+h3{
+  font-size: 40px;
+}
+
+a{
+  color: #B68E26;
+}
+
+/* Comment Section */
+.comment-section{
+  height: 100%;
+  width: 100%;
+  background-image: url("images/disc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+input{
+  width: 80%;
+  margin-top: 5%;
+  padding: 20px;
+  padding-bottom: 30%;
+}
+
+#comment{
+  margin-top: 10%;
+}
