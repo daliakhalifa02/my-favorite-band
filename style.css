@@ -23,7 +23,7 @@ html, body {
 .topnav a {
   float: left;
   color: white;
-  padding: 14px 16px;
+  padding: 14px 10px;
   text-decoration: none;
   font-size: 17px;
   font-family: Arial, Helvetica, sans-serif;
@@ -48,19 +48,18 @@ html, body {
 }
 
 /* Banner Section */
+.banner{
+  text-align: center;
+  color: white;
+  padding: 100px 0 150px 0;
+}
+
 .banner-container{
   background-image: url("images/banner.jpg");
   height: 100%;
   width: 100%;
   background-position: center;
   background-size: cover;
-  margin: auto;
-}
-
-.banner{
-  text-align: center;
-  color: white;
-  padding: 300px 0;
 }
 
 .banner-h1, .banner-h2{
@@ -73,21 +72,21 @@ html, body {
 }
 
 .banner-h1{
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .banner-h2{
   margin: 30px auto;
   font-style: italic;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 button{
   background-color: #B68E26;
   border: none;
-  padding: 10px 30px;
-  font-size: large;
+  padding: 8px 10px;
+  font-size: 12px;
   text-transform: uppercase;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -106,27 +105,29 @@ img{
   margin-left: 5%;
 }
 
-h1,h3{
+h1{
   text-align: center;
-  color: white;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 20px;
   font-family:'Playfair Display', serif;
-  font-size: 45px;
   margin: 0;
+  color: #B68E26;
+  font-size: 30px;
 }
 
-h1{
-  color: #B68E26;
+h3{
+  text-align: center;
+  color: white;
+
 }
 
 p{
   color: white;
-  margin: 10%;
-  margin-bottom: 0;
-  padding-bottom: 20px;
+  margin: 20px ;
+  margin-bottom: 0px;
+  /* padding-bottom: 20px; */
   line-height: 2;
-  font-size: 23px;
+  font-size: 13px;
 }
 
 /* h1 {
@@ -177,7 +178,7 @@ h2{
 }
 
 h3{
-  font-size: 40px;
+  font-size: 20px;
 }
 
 a{
