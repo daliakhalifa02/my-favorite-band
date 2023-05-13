@@ -225,6 +225,32 @@ input{
   background-color: white;
   width: 80%;
   margin-top: 20px;
+  border-radius: 2px;
+}
+
+/* Donation Section */
+.donate-section{
+  background-image: url(images/black-baground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#total{
+  color: white;
+  padding: 0px 0px 20px 20px;
+}
+
+.donate-btns{
+  padding: 25px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#customize{
+  padding: 10px;
+  margin-top: -2px;
+  width: 40px;
+  height: 35px;
 }
 
 /* Footer Section */
