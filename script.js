@@ -1,4 +1,15 @@
 document.getElementById("icon").addEventListener("click", myFunction);
+const post= document.getElementById("comment");
+const donate5 = document.getElementById("donate5");
+const donate10 = document.getElementById("donate10");
+const donate20 = document.getElementById("donate20");
+const donate50 = document.getElementById("donate50");
+const donate100 = document.getElementById("donate100");
+const customize = document.getElementById("customize");
+const donate = document.getElementById("donate");
+let total = 0;
+let slideIndex = 0;
+carousel();
 
 function myFunction(){
   var x = document.getElementById("myLinks");
@@ -8,9 +19,6 @@ function myFunction(){
     x.style.display = "block";
   }
 }
-
-var slideIndex = 0;
-carousel();
 
 function carousel() {
   var i;
@@ -36,8 +44,6 @@ function carousel() {
   setTimeout(carousel, 4000);
 }
 
-
-var post= document.getElementById("comment");
 post.addEventListener("click", function(){
     var commentBoxValue= document.getElementById("comment-box").value;
  
@@ -47,15 +53,6 @@ post.addEventListener("click", function(){
     document.getElementById("unordered").appendChild(li);
  
 });
-
-const donate5 = document.getElementById("donate5");
-const donate10 = document.getElementById("donate10");
-const donate20 = document.getElementById("donate20");
-const donate50 = document.getElementById("donate50");
-const donate100 = document.getElementById("donate100");
-const customize = document.getElementById("customize");
-const donate = document.getElementById("donate");
-let total = 0;
 
 donate5.addEventListener("click", function () {
   total += 5;
