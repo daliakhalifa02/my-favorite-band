@@ -15,14 +15,27 @@ carousel();
 function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
+  var numCards = 3; // Number of cards to display at a time
+
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 4000); // Change image every 2 seconds
+
+  for (i = slideIndex; i < slideIndex + numCards; i++) {
+    if (i >= x.length) {
+      break;
+    }
+    x[i].style.display = "block";
+  }
+
+  slideIndex += numCards;
+  if (slideIndex >= x.length) {
+    slideIndex = 0;
+  }
+
+  setTimeout(carousel, 4000); // Change cards every 4 seconds
 }
+
 
 var post= document.getElementById("comment");
 post.addEventListener("click", function(){

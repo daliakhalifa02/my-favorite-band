@@ -4,6 +4,10 @@ html, body {
   margin: auto;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 *{
   font-family: 'Playfair Display', serif;
 }
@@ -47,11 +51,17 @@ html, body {
   padding-top: 25px;
 }
 
+.desktop-container{
+  display: none;
+}
+
 /* Banner Section */
 .banner{
   text-align: center;
   color: white;
-  padding: 100px 0 150px 0;
+  /* padding: 100px 0 150px 0; */
+  padding-top: 150px;
+  height: 600px;
 }
 
 .banner-container{
@@ -100,9 +110,15 @@ button{
   margin: 0px;
 }
 
+.about-desk{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 img{
   width: 250px;
-  /* margin: 20px; */
 }
 
 .centered{
@@ -177,7 +193,7 @@ h2{
   display:none;
 }
 
-.albums{
+.albums-container{
   background-image: url("images/black-baground.png");
   background-position: center;
   background-size: cover;
@@ -191,6 +207,7 @@ h3{
 
 a{
   color: #B68E26;
+  text-decoration: none;
 }
 
 .centered{
@@ -206,15 +223,16 @@ a{
   width: 100%;
   background-image: url("images/disc.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   text-align: center;
 }
 
 input{
-  width: 80%;
+  width: 300px;
   margin-top: 5%;
+  height: 50px;
   padding: 5px;
-  padding-bottom: 30%;
+  /* padding-bottom: 30%; */
 }
 
 #comment{
@@ -223,7 +241,7 @@ input{
 
 #unordered{
   background-color: white;
-  width: 80%;
+  width: 300px;
   margin-top: 20px;
   border-radius: 2px;
 }
@@ -244,6 +262,7 @@ input{
   padding: 25px;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #customize{
@@ -258,4 +277,105 @@ footer{
   height: 100px;
   background-color: #1d1d1d;
   color: white;
+}
+
+.mySlides {
+  display: block;
+}
+.albums {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+.albums-container {
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.mySlides {
+  width: 100%;
+}
+/* Media query for desktop view */
+@media screen and (min-width: 768px) {
+ .albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .mySlides {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 800px){
+  .about-desk{
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+  }
+
+  .about-image{
+    width: 600px;
+    height: fit-content;
+    margin:0px 0px 70px 70px;
+  }
+
+  .banner-container{
+    height: 700px;
+  }
+
+  .desktop-container{
+    display: block;
+  }
+
+  .mobile-container{
+    display: none;
+  }  
+
+  .navbar, .nav-links{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links{
+    gap: 50px;
+    margin-right: 50px;
+    color: white;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  .donate-btns{
+    justify-content: center;
+    gap: 30px;
+  }
+
+  #total{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mySlides {
+    width: 100%;
+    display: none;
+  }
+
+  .mySlides:first-child {
+    display: block;
+  }
+
+  .albums-container{
+    height: 1000px;
+  }
 }
