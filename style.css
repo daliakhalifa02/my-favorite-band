@@ -101,8 +101,14 @@ button{
 }
 
 img{
-  width: 90%;
-  margin-left: 5%;
+  width: 250px;
+  /* margin: 20px; */
+}
+
+.centered{
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 h1{
@@ -173,6 +179,8 @@ h2{
 
 .albums{
   background-image: url("images/black-baground.png");
+  background-position: center;
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
@@ -183,6 +191,13 @@ h3{
 
 a{
   color: #B68E26;
+}
+
+.centered{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Comment Section */
@@ -198,10 +213,23 @@ a{
 input{
   width: 80%;
   margin-top: 5%;
-  padding: 20px;
+  padding: 5px;
   padding-bottom: 30%;
 }
 
 #comment{
-  margin-top: 10%;
+  margin-top: 20px;
+}
+
+#unordered{
+  background-color: white;
+  width: 80%;
+  margin-top: 20px;
+}
+
+/* Footer Section */
+footer{
+  height: 100px;
+  background-color: #1d1d1d;
+  color: white;
 }
