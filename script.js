@@ -12,7 +12,7 @@ let slideIndex = 0;
 carousel();
 
 function myFunction(){
-  var x = document.getElementById("myLinks");
+  const x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -21,9 +21,9 @@ function myFunction(){
 }
 
 function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var numCards = 3;
+  let i;
+  const x = document.getElementsByClassName("mySlides");
+  const numCards = 3;
 
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
@@ -45,10 +45,10 @@ function carousel() {
 }
 
 post.addEventListener("click", function(){
-    var commentBoxValue= document.getElementById("comment-box").value;
+    const commentBoxValue= document.getElementById("comment-box").value;
  
-    var li = document.createElement("li");
-    var text = document.createTextNode(commentBoxValue);
+    const li = document.createElement("li");
+    const text = document.createTextNode(commentBoxValue);
     li.appendChild(text);
     document.getElementById("unordered").appendChild(li);
  
@@ -97,3 +97,5 @@ window.addEventListener('load', function() {
     alert('Welcome, ' + userInput + '!');
   }
 });
+
+ 
