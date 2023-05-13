@@ -90,3 +90,10 @@ donate.addEventListener("click", function () {
 function updateTotal() {
   document.getElementById("total").innerHTML = "A total of " + total + "$ has been donated to Beirut. Thank you! ";
 }
+
+window.addEventListener('load', function() {
+  let userInput = prompt('Please enter your name:');
+  if (userInput) {
+    alert('Welcome, ' + userInput + '!');
+  }
+});
